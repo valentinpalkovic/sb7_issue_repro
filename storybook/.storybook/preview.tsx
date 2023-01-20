@@ -1,4 +1,4 @@
-import { configureStore } from '@reduxjs/toolkit';
+import { configureStore, createReducer } from '@reduxjs/toolkit';
 import React from 'react';
 import { Provider } from "react-redux"
 
@@ -12,7 +12,7 @@ export const parameters = {
     },
   },
 }
-const store = configureStore({reducer: {}});
+const store = configureStore({reducer: createReducer({}, {})});
 
 // @ts-ignore
 export const decorators = [
