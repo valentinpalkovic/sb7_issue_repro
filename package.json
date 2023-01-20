@@ -8,7 +8,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "storybook": "cd storybook && npm run storybook"
+    "storybook": "cd storybook && npm run storybook",
+    "storybook:build": "cd storybook && npm run build-storybook",
+    "storybook:install": "cd storybook && npm ci"
   },
   "dependencies": {
     "@next/font": "13.1.3",
